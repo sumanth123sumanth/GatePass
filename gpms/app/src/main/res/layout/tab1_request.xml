@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/et_reason"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/round_bt"
+        android:text="SUBMIT"
+        android:textColor="@color/backgroundcolor" />
+
+    <EditText
+        android:id="@+id/et_wid"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/bt_submit"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="wid"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_outdate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/et_wid"
+        android:layout_below="@+id/et_wid"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="outdate"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_indate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/et_outdate"
+        android:layout_below="@+id/et_outdate"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="indate"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_reason"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/et_indate"
+        android:layout_below="@+id/et_indate"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="reason"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_outdate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/et_outdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/twotone_calendar_today_black_24dp" />
+
+    <Button
+        android:id="@+id/bt_indatepick"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/bt_outdate"
+        android:layout_alignBottom="@+id/et_indate"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/twotone_calendar_today_black_24dp" />
+
+</RelativeLayout>
